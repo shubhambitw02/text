@@ -1,0 +1,263 @@
+* {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.mainContainer {
+    min-height: 100vh;
+}
+
+
+nav.mainNav {
+    padding: 0px 15px;
+}
+
+
+header.mainHead {
+    background: transparent !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: all 0.2s;
+}
+
+
+@media screen and (min-width:991px) {
+    .navRow {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navItem {
+        display: block !important;
+    }
+
+    .navRow {
+        height: 100vh;
+    }
+
+    .leftNav,
+    .rightNav,
+    .mainLogo {
+        width: 100%;
+    }
+
+    .mainLogo {
+        text-align: center;
+    }
+
+    .navRow {
+        display: none;
+    }
+
+    .toggleBtnCol {
+        display: block !important;
+        text-align: center;
+    }
+
+    header.mainHead {
+        background: white !important;
+        top: 0;
+    }
+
+    section.firstSection {
+        background-position: initial !important;
+    }
+
+
+}
+
+.toggleBtnCol {
+    display: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1100px) {
+    .navItem a.navLink {
+        font-size: 0.8em;
+    }
+}
+
+.navItem {
+    display: inline-block;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navItem a.navLink {
+    color: black !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+}
+
+
+.vAlignFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainLogo {
+    padding: 15px;
+}
+
+
+.navItem a.navLink:hover {
+    text-decoration: none;
+}
+
+.navItem a.navLink:before {
+    content: "";
+    position: absolute;
+    background: #444;
+    height: 1px;
+    width: 0%;
+    transition: all 0.5s;
+    bottom: -2px;
+}
+
+.navItem:hover a.navLink:before {
+    width: 100%;
+}
+
+.navItem a.navLink {
+    position: relative;
+}
+
+.navItem {
+    cursor: pointer;
+}
+
+.navTogglerBtn .nav-icon {
+    margin: 1em;
+    width: 40px;
+}
+
+.navTogglerBtn .nav-icon:after,
+.navTogglerBtn .nav-icon:before,
+.navTogglerBtn .nav-icon div {
+    background-color: #000;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+.navTogglerBtn.active .nav-icon:before {
+    transform: translateY(12px) rotate(135deg);
+}
+
+.navTogglerBtn.active .nav-icon:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.navTogglerBtn.active .nav-icon div {
+    transform: scale(0);
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+    opacity: 1;
+    z-index: 10;
+}
+
+.loader.loader--style5 {
+    display: inline-block;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+    fill: #fc3;
+}
+
+.pgFixed {
+    overflow: hidden;
+}
+
+.navTogglerBtn {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.navRowInner {
+    height: 85%;
+}
+
+section {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+section.firstSection {
+    background-image: url(../img/content_images/seven.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top -100px center;
+    z-index: 7;
+}
+
+.mainLogo h5 {
+    margin-bottom: 0px;
+    letter-spacing: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header.mainHead.navScrolled {
+    background: white !important;
+    box-shadow: 0px 0px 8px #ebeaea;
+}
+
+/* first Section */
+main.main {
+    z-index: 8;
+}
+
+#fullpage section {
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#fullpage {
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.firstSection .sectionHeadText {
+    text-align: right;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 30%;
+}
+
+.sectionHeadText .sectionTagLineHead{
+    font-size: 3rem;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.sectionHeadText .sectionTagLineSub{letter-spacing: 2px;width: 650px;margin-left: auto;}
+
+.onepage-wrapper {
+    width: 100vw !important;
+    height: 100vh !important;
+}
